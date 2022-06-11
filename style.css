@@ -153,6 +153,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  background-color: inherit;
 
 }
 
@@ -170,6 +171,7 @@ body {
     display: flex;
     margin-left: 3rem;
     gap:1rem;
+    background-color: inherit;
     
   }
   
@@ -266,7 +268,7 @@ font-size: 14px;
   position: absolute;
   width:100%;
   top:65px;
-  left:-50px;
+  left:-54px;
   
   border-radius: 6px;
   background-color:white;

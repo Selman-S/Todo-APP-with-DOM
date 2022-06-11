@@ -55,6 +55,8 @@ theme.addEventListener('click',()=>{
       e.style.borderBottom ='1px solid var(--dt-very-dark-grayish-blue)'
     });
     document.querySelector('.todo-container').style.boxShadow = '0px 2px 100px -40px var(--dt-very-dark-desaturated-blue)';
+    document.querySelector('.todo-container').style.color = 'var(--dt-light-grayish-blue)';
+    document.querySelector('.middle-poz').style.backgroundColor = 'var(--dt-very-dark-desaturated-blue)';
     
     
     
@@ -78,6 +80,8 @@ theme.addEventListener('click',()=>{
       e.style.borderBottom ='1px solid var(--lt-very-light-grayish-blue)'
     });
     document.querySelector('.todo-container').style.boxShadow = '0px 2px 100px -40px var(--lt-dark-grayish-blue)';
+    document.querySelector('.middle-poz').style.backgroundColor = 'white';
+    document.querySelector('.todo-container').style.color = 'var(--lt-very-dark-grayish-lue)';
     
     
     sun = true;
