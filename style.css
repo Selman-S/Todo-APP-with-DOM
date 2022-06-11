@@ -43,7 +43,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url(./images/bg-desktop-dark.jpg);
+  background-image: url(./images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
   background-color:var(--lt-very-light-gray) ;
   background-size:100%;
@@ -113,9 +113,7 @@ body {
   color:var(--lt-very-dark-grayish-lue);
   cursor: pointer;
 }
-.check:hover {
 
-}
 .todo-container {
   width:100%;
   background-color: #fff;
