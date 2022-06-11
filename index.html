@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title> Todo app</title>
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+
+      <h1>Todo</h1>
+      <img src="./images/icon-sun.svg"  alt="">
+    </div>
+    <div id="add-div">
+      <input type="checkbox" name="" class="check">
+      <input type="text" id="add-check">
+    </div>
+    <div class="todo-container">
+      <div class="todo-item">
+        <input type="checkbox" name="" class="check">
+        <p class="desc">Complate online JavaScript course</p>
+        <div class="cross">
+
+          <img src="./images/icon-cross.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="bottom-left">
+        <!-- Add dynamic number -->
+        <span class="num"></span>
+        <p>items left</p>
+      </div>
+
+      <div class="bottom-middle">
+        <p>All</p>
+        <p>Completed</p>
+        <p>Active</p>
+      </div>
+
+      <div class="bottom-right">
+        <p>Clear Completed</p>
+
+      </div>
+    </div>
+
+    <p>Drag and drop to reorder list</p>
+
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
