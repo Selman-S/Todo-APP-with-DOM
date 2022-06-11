@@ -8,39 +8,10 @@ window.addEventListener('load',()=>{
   }
   sun = Boolean(theme) ;
   
-  
+  changeTheme()
   
 })
 function changeTheme() {
-  if(sun==true){
-    //karanlık modu
-    theme.src= './images/icon-sun.svg';
-    document.querySelector('body').style.backgroundImage= 'url(./images/bg-desktop-dark.jpg)';
-    document.querySelector('body').style.backgroundColor ='var(--dt-very-dark-blue)';
-    document.querySelector('#add-div').style.backgroundColor = 'var(--dt-very-dark-desaturated-blue)';
-    
-    
-
-
-
-    
-   
-  }else {
-    // aydınlık modu
-    theme.src= './images/icon-moon.svg';
-    document.querySelector('body').style.backgroundImage= 'url(./images/bg-desktop-light.jpg)';
-    document.querySelector('body').style.backgroundColor ='var(--lt-very-light-gray)';
-    document.querySelector('#add-div').style.backgroundColor = 'var(--lt-very-light-gray)';
-    
-    
-    
-    sun = true;
-    localStorage.setItem('theme',sun)
-  }
-  console.log(sun);
-}
-
-theme.addEventListener('click',()=>{
   if(sun==true){
     //karanlık modu
     theme.src= './images/icon-sun.svg';
@@ -57,14 +28,13 @@ theme.addEventListener('click',()=>{
     document.querySelector('.todo-container').style.boxShadow = '0px 2px 100px -40px var(--dt-very-dark-desaturated-blue)';
     document.querySelector('.todo-container').style.color = 'var(--dt-light-grayish-blue)';
     document.querySelector('.middle-poz').style.backgroundColor = 'var(--dt-very-dark-desaturated-blue)';
+    document.querySelector('#add-check').style.color = 'var(--lt-very-dark-grayish-lue)';
     
     
     
     
     
     
-    sun = false;
-    localStorage.setItem('theme',sun);
   }else {
     // aydınlık modu
     theme.src= './images/icon-moon.svg';
@@ -82,12 +52,25 @@ theme.addEventListener('click',()=>{
     document.querySelector('.todo-container').style.boxShadow = '0px 2px 100px -40px var(--lt-dark-grayish-blue)';
     document.querySelector('.middle-poz').style.backgroundColor = 'white';
     document.querySelector('.todo-container').style.color = 'var(--lt-very-dark-grayish-lue)';
+    document.querySelector('#add-check').style.color = 'var(--lt-very-dark-grayish-lue)';
     
     
-    sun = true;
-    localStorage.setItem('theme',sun)
+ 
   }
   console.log(sun);
   
+}
 
+theme.addEventListener('click',()=>{
+  if(sun==true){
+  changeTheme();
+  sun = false;
+  localStorage.setItem('theme',sun);
+  
+}else if(sun==false){
+  changeTheme();
+  sun = true;
+  localStorage.setItem('theme',sun);
+  
+}
 })
