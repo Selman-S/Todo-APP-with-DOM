@@ -16,45 +16,117 @@
 
 <body>
   <div class="container">
-    <div class="header">
 
+    <div class="header">
       <h1>Todo</h1>
-      <img src="./images/icon-sun.svg"  alt="">
+      <img id="theme-img" src="./images/icon-moon.svg" alt="">
     </div>
     <div id="add-div">
-      <input type="checkbox" name="" class="check">
-      <input type="text" id="add-check">
+      <div id="check-input" class="check"></div>
+      <input type="text" id="add-check" placeholder="Create a new todo...">
+
     </div>
     <div class="todo-container">
       <div class="todo-item">
-        <input type="checkbox" name="" class="check">
-        <p class="desc">Complate online JavaScript course</p>
+        <div class="todo-desc">
+
+          <div class="check  check-bg"><img src="./images/icon-check.svg" alt=""></div>
+          <p class="desc check-p">Complate online JavaScript course</p>
+        </div>
         <div class="cross">
 
           <img src="./images/icon-cross.svg" alt="">
         </div>
 
       </div>
+      <div class="todo-item">
+        <div class="todo-desc">
 
-      <div class="bottom-left">
-        <!-- Add dynamic number -->
-        <span class="num"></span>
-        <p>items left</p>
+          <div class="check"></div>
+          <p class="desc">Jog around the park 3x</p>
+        </div>
+        <div class="cross">
+
+          <img src="./images/icon-cross.svg" alt="">
+        </div>
+
       </div>
+      <div class="todo-item">
+        <div class="todo-desc">
 
-      <div class="bottom-middle">
-        <p>All</p>
-        <p>Completed</p>
-        <p>Active</p>
+          <div class="check"></div>
+          <p class="desc">10 minutes meditation</p>
+        </div>
+        <div class="cross">
+
+          <img src="./images/icon-cross.svg" alt="">
+        </div>
+
       </div>
+      <div class="todo-item">
+        <div class="todo-desc">
 
-      <div class="bottom-right">
-        <p>Clear Completed</p>
+          <div class="check"></div>
+          <p class="desc">Read for 1 hour</p>
+        </div>
+        <div class="cross">
 
+          <img src="./images/icon-cross.svg" alt="">
+        </div>
+
+      </div>
+      <div class="todo-item">
+        <div class="todo-desc">
+
+          <div class="check"></div>
+          <p class="desc">Pick up groceries</p>
+        </div>
+        <div class="cross">
+
+          <img src="./images/icon-cross.svg" alt="">
+        </div>
+
+      </div>
+      <div class="todo-item">
+        <div class="todo-desc">
+
+          <div class="check"></div>
+          <p class="desc">Complate Todo App on Frontend Mentor</p>
+        </div>
+        <div class="cross">
+
+          <img src="./images/icon-cross.svg" alt="">
+        </div>
+
+      </div>
+      <div class="todo-bottom">
+
+        <div class="bottom-left">
+          <!-- Add dynamic number -->
+          <span class="num">5</span>
+          <p>items left</p>
+        </div>
+
+        <div class="bottom-middle">
+          <p class="b-m active ">All</p>
+          <p class="b-m">Active</p>
+          <p class="b-m">Completed</p>
+        </div>
+
+        <div class="bottom-right">
+          <p>Clear </p>
+          <p>
+            Completed
+
+          </p>
+
+        </div>
       </div>
     </div>
+    <div class="copyright">
 
-    <p>Drag and drop to reorder list</p>
+      <p>Drag and drop to reorder list</p>
+    </div>
 
   </div>
 
