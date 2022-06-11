@@ -18,13 +18,13 @@
 
 
   /********** dark mode ************/
---Very-Dark-Blue: hsl(235, 21%, 11%);
---Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
---Light-Grayish-Blue: hsl(234, 39%, 85%);
---Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
---Dark-Grayish-Blue: hsl(234, 11%, 52%);
---Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
---Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+--dt-very-dark-blue: hsl(235, 21%, 11%);
+--dt-very-dark-desaturated-blue: hsl(235, 24%, 19%);
+--dt-light-grayish-blue: hsl(234, 39%, 85%);
+--dt-light-grayish-blue-hover: hsl(236, 33%, 92%);
+--dt-dark-grayish-blue: hsl(234, 11%, 52%);
+--dt-very-dark-grayish-blue: hsl(233, 14%, 35%);
+--dt-very-dark-grayish-blue: hsl(237, 14%, 26%);
 
 
 }
@@ -43,7 +43,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url(./images/bg-desktop-light.jpg);
+  background-image: url(./images/bg-desktop-dark.jpg);
   background-repeat: no-repeat;
   background-color:var(--lt-very-light-gray) ;
   background-size:100%;
@@ -79,6 +79,7 @@ body {
 #theme-img {
   width:25px;
   height:25px;
+  cursor: pointer;
 }
 
 #add-div {
