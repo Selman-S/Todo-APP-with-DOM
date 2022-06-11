@@ -58,9 +58,9 @@ body {
   flex-direction: column;
   width:540px;
   margin-top:80px ;
+}  
   
-  
-}
+
 
 .header {
   display: flex;
@@ -96,10 +96,12 @@ body {
 }
 #add-check {
   font-size:20px;
+  width:400px;
   border:none;
   outline:none;
   font-family: 'Josefin Sans', sans-serif;
-  color:var(--lt-very-dark-grayish-lue)
+  color:var(--lt-very-dark-grayish-lue);
+  background-color:transparent;
 }
 .check {
   width:25px;
@@ -217,6 +219,57 @@ body {
 }
 
 
+
+@media (max-width:576px){
+  body {
+    background-position:top center;
+    background-size:auto 200px;
+  }
+  .container {
+    width:90%;
+    margin-top:40px ;
+  } 
+  .header h1 {
+    letter-spacing: .8rem;
+    font-size:1.5rem;
+  }
+  #theme-img {
+    width:20px;
+    height:20px;
+  }
+   
+#add-div {
+  padding:15px;
+  margin-top: 2rem;
+}
+::placeholder {
+  font-size: .7rem;
+}  
+#add-check {
+  font-size:16px;
+  width:250px;
+} 
+.check {
+  width:20px;
+  height:20px;
+}
+.todo-item p {
+font-size: 14px;
+  
+}
+  
+  
+
+  
+   
+    
+ 
+   
+  
+    
+  
+    
+}
 
 
 
